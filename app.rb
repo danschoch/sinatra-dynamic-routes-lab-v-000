@@ -32,7 +32,7 @@ class App < Sinatra::Base
     @op = params[:operation]
     @num1 = params[:number1].to_i
     @num2 = params[:number2].to_i
-    @answer = ""
+    @answer = "Invalid"
 
     case @op
     when 'add'
@@ -44,7 +44,7 @@ class App < Sinatra::Base
     when 'divide'
       @answer = (@num1 / @num2).to_s
     end
-    
+
   end
 
 end

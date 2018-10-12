@@ -34,7 +34,8 @@ class App < Sinatra::Base
     @num2 = params[:number2].to_i
     @answer = ""
 
-    if @op = "add"
+    case @op
+    when 'add'
       @answer = (@num1 + @num2).to_s
     end
     if @op = "subtract"

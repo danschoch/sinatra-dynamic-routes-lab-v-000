@@ -36,13 +36,17 @@ class App < Sinatra::Base
 
     if @op = "add"
       @answer = (@num1 + @num2)
+    end
     if @op = "subtract"
       @answer = (@num1 - @num2)
+    end
     if @op = "multiply"
       @answer = (@num1 * @num2)
+    end
     if @op = "divide"
       @answer = (@num1 / @num2)
-    else
+    end
+    if
       @answer = "Invalid input"
     end
 

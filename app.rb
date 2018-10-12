@@ -35,16 +35,16 @@ class App < Sinatra::Base
     @answer = ""
 
     if @op = "add"
-      @answer = (@num1 + @num2)
+      @answer = (@num1 + @num2).to_s
     end
     if @op = "subtract"
-      @answer = (@num1 - @num2)
+      @answer = (@num1 - @num2).to_s
     end
     if @op = "multiply"
-      @answer = (@num1 * @num2)
+      @answer = (@num1 * @num2).to_s
     end
     if @op = "divide"
-      @answer = (@num1 / @num2)
+      @answer = (@num1 / @num2).to_s
     end
   end
 

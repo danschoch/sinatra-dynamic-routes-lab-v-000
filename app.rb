@@ -37,16 +37,14 @@ class App < Sinatra::Base
     case @op
     when 'add'
       @answer = (@num1 + @num2).to_s
-    end
-    if @op = "subtract"
+    when 'subtract'
       @answer = (@num1 - @num2).to_s
-    end
-    if @op = "multiply"
+    when 'multiply'
       @answer = (@num1 * @num2).to_s
-    end
-    if @op = "divide"
+    when 'divide'
       @answer = (@num1 / @num2).to_s
     end
+    
   end
 
 end

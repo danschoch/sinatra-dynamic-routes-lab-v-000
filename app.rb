@@ -19,7 +19,7 @@ class App < Sinatra::Base
 
     output = ""
     @num.times do
-      "#{@phrase}"
+      output += @phrase
     end
   end
 

@@ -46,9 +46,6 @@ class App < Sinatra::Base
     if @op = "divide"
       @answer = (@num1 / @num2)
     end
-    if
-      @answer = "Invalid input"
-    end
 
     "#{@answer}"
   end

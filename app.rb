@@ -11,7 +11,7 @@ class App < Sinatra::Base
 
   end
 
-  get '/reversename/:name' do
+  get '/say/:number/:phrase' do
 
   end
 

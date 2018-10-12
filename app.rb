@@ -35,7 +35,16 @@ class App < Sinatra::Base
     @answer = ""
 
     if @op = "add"
-
+      @answer = (@num1 + @num2)
+    elsif @op = "add"
+      @answer = (@num1 + @num2)
+    elsif @op = "add"
+      @answer = (@num1 + @num2)
+    elsif @op = "add"
+      @answer = (@num1 + @num2)
+    else
+      "Invalid input"
+    end
   end
 
 end

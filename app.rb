@@ -32,6 +32,10 @@ class App < Sinatra::Base
     @op = params[:operation]
     @num1 = params[:number1].to_i
     @num2 = params[:number2].to_i
+    @answer = ""
+
+    if @op = "add"
+
   end
 
 end

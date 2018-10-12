@@ -46,8 +46,6 @@ class App < Sinatra::Base
     if @op = "divide"
       @answer = (@num1 / @num2)
     end
-
-    @answer.to_s
   end
 
 end
